@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JUnit Jupiter" tests="9" skipped="0" failures="0" errors="0" time="0.077" hostname="W331AU" timestamp="2017-10-09T07:07:36">
+<testsuite name="JUnit Jupiter" tests="9" skipped="0" failures="0" errors="0" time="0.086" hostname="W331AU" timestamp="2017-10-09T07:43:03">
 <properties>
 <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
 <property name="file.encoding" value="UTF-8"/>
@@ -57,7 +57,7 @@
 <property name="user.timezone" value="Asia/Tokyo"/>
 <property name="user.variant" value=""/>
 </properties>
-<testcase name="isAfternoonTest1()" classname="ClockTest" time="0.031">
+<testcase name="isAfternoonTest1()" classname="ClockTest" time="0.037">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isAfternoonTest1()]
 display-name: isAfternoonTest1()
@@ -69,7 +69,7 @@ unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isAfternoonTest2()]
 display-name: isAfternoonTest2()
 ]]></system-out>
 </testcase>
-<testcase name="isMorningTest1()" classname="ClockTest" time="0.001">
+<testcase name="isMorningTest1()" classname="ClockTest" time="0.002">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isMorningTest1()]
 display-name: isMorningTest1()
@@ -81,19 +81,19 @@ unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isMorningTest2()]
 display-name: isMorningTest2()
 ]]></system-out>
 </testcase>
-<testcase name="isNightTest1()" classname="ClockTest" time="0.001">
+<testcase name="isNightTest1()" classname="ClockTest" time="0">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isNightTest1()]
 display-name: isNightTest1()
 ]]></system-out>
 </testcase>
-<testcase name="isNightTest2()" classname="ClockTest" time="0.001">
+<testcase name="isNightTest2()" classname="ClockTest" time="0">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isNightTest2()]
 display-name: isNightTest2()
 ]]></system-out>
 </testcase>
-<testcase name="isNightTest3()" classname="ClockTest" time="0">
+<testcase name="isNightTest3()" classname="ClockTest" time="0.001">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isNightTest3()]
 display-name: isNightTest3()
@@ -105,7 +105,7 @@ unique-id: [engine:junit-jupiter]/[class:ClockTest]/[method:isNightTest4()]
 display-name: isNightTest4()
 ]]></system-out>
 </testcase>
-<testcase name="greetTest()" classname="GreeterTest" time="0.002">
+<testcase name="greetTest()" classname="GreeterTest" time="0.001">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:GreeterTest]/[method:greetTest()]
 display-name: greetTest()

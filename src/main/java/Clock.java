@@ -1,13 +1,20 @@
 import java.time.*;
 
 public class Clock {
-    private LocalTime now = LocalTime.now();
+    private LocalTime now;
+    private LocalTime morningStart;
+    private LocalTime morningEnd;
+    private LocalTime afternoonStart;
+    private LocalTime afternoonEnd;
+    private LocalTime nightStart;
+    private LocalTime nightEnd;
 
     Clock (String time) {
         now = LocalTime.parse(time);
     }
 
     Clock () {
+        now = LocalTime.now();
     }
     
     private boolean judgeTime(LocalTime start,LocalTime end) {
@@ -18,18 +25,18 @@ public class Clock {
     } 
 
     public boolean isMorning() {
-        LocalTime morningStart = LocalTime.parse("04:59:59");
-        LocalTime morningEnd = LocalTime.parse("12:00:00");
+        morningStart = LocalTime.parse("04:59:59");
+        morningEnd = LocalTime.parse("12:00:00");
         return judgeTime(morningStart,morningEnd);
     }
     public boolean isAfternoon() {
-        LocalTime afternoonStart = LocalTime.parse("11:59:59");
-        LocalTime afternoonEnd = LocalTime.parse("18:00:00");
+        afternoonStart = LocalTime.parse("11:59:59");
+        afternoonEnd = LocalTime.parse("18:00:00");
         return judgeTime(afternoonStart,afternoonEnd);
     }
     public boolean isNight() {
-        LocalTime nightStart = LocalTime.parse("17:59:59");
-        LocalTime nightEnd = LocalTime.parse("05:00:00");
+        nightStart = LocalTime.parse("17:59:59");
+        nightEnd = LocalTime.parse("05:00:00");
         if(now.isAfter(nightStart)) {
             return true;
         } 
