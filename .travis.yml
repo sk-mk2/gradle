@@ -7,10 +7,6 @@ script:
     - touch deployTest.txt
 
 deploy:
-  provider: releases
-  api-key: "GITHUB OAUTH TOKEN"
-  file: 
+  file:  
     - deployTest.txt
   skip_cleanup: true
-  on:
-    tags: true 
