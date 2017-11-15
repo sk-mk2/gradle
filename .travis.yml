@@ -8,7 +8,7 @@ script:
 
 deploy:
   provider: releases
-  api-key: 09bfe2f708715af46e4482d98fdbf550be2f4fc9
+  api-key: "GITHUB OAUTH TOKEN"
   file: 
     - deployTest.txt
   skip_cleanup: true
