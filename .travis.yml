@@ -1,4 +1,16 @@
 language: java
 
+sudo: false
+
 script:
-    - gradle build  
+    - gradle build 
+    - touch deployTest.txt
+
+deploy:
+  provider: releases
+  api-key: $GITHUB_OAUTH_TOKEN
+  file: 
+    - deployTest.txt
+  skip_cleanup: true
+  on:
+    tags: true 
