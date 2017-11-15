@@ -7,6 +7,7 @@ script:
     - touch deployTest.txt
 
 deploy:
-  file:  
-    - deployTest.txt
-  skip_cleanup: true
+  - provider: sk-mk2
+    file:  
+      - deployTest.txt
+    skip_cleanup: true
