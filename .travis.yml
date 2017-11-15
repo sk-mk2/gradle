@@ -11,6 +11,6 @@ deploy:
     file:  
       - deployTest.txt
     skip_cleanup: true
-    api_key: $GITHUB_TOKEN
+    github_token: $GITHUB_TOKEN
     on:
       branch: master
