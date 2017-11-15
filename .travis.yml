@@ -7,7 +7,7 @@ script:
     - touch deployTest.txt
 
 deploy:
-    provider: pages
+    provider: releases
     file:  
       - deployTest.txt
     skip_cleanup: true
