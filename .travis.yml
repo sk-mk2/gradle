@@ -7,8 +7,10 @@ script:
     - touch deployTest.txt
 
 deploy:
+    provider: pages
     file:  
       - deployTest.txt
     skip_cleanup: true
+    github_token: $GITHUB_TOKEN
     on:
       branch: master
