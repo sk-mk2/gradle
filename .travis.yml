@@ -1,6 +1,6 @@
 language: java
 
-notification:
+notifications:
     slack: hykw-lab:4a2v2TIVNfe1QexhdpGut6GK
     on_success: always # default: change
     on_failure: always
